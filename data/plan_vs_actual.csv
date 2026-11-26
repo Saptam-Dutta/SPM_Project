@@ -1,0 +1,18 @@
+ID,Activity,Kind,Plan days,Actual days,Plan start,Plan finish,Actual start,Actual finish
+T1,Requirements & synopsis,Baseline,2,2,2026-10-01,2026-10-02,2026-10-01,2026-10-02
+T2,Setup & traffic simulator,Baseline,2,2,2026-10-03,2026-10-04,2026-10-03,2026-10-04
+T3,"Capture, flows, inventory",Baseline,3,4,2026-10-05,2026-10-07,2026-10-05,2026-10-08
+T4,Baseline learning,Baseline,2,2,2026-10-08,2026-10-09,2026-10-09,2026-10-10
+T5,Phase 1 checks & tests,Baseline,2,2,2026-10-10,2026-10-11,2026-10-11,2026-10-12
+T6,50% progress review,Baseline,1,1,2026-10-12,2026-10-12,2026-10-13,2026-10-13
+T7,Beaconing & volume detectors,Baseline,3,4,2026-10-13,2026-10-15,2026-10-14,2026-10-17
+T8,Risk scoring & alerts,Baseline,2,2,2026-10-16,2026-10-17,2026-10-18,2026-10-19
+T9,Dashboard v1 & isolation,Baseline,2,2,2026-10-18,2026-10-19,2026-10-20,2026-10-21
+T10,Evaluation harness,Baseline,2,2,2026-10-20,2026-10-21,2026-10-22,2026-10-23
+T11,"Report v1, synopsis, deck",Baseline,3,3,2026-10-22,2026-10-24,2026-10-24,2026-10-26
+C1,Auto-quarantine at score 100,Approved change,1,1,2026-10-25,2026-10-25,2026-10-27,2026-10-27
+C2,Dashboard redesign (SOC style),Approved change,2,2,2026-10-26,2026-10-27,2026-10-28,2026-10-29
+C3,Evasion testing + rhythm detector,Approved change,2,2,2026-10-28,2026-10-29,2026-10-30,2026-10-31
+C4,MITRE ATT&CK mapping,Approved change,1,1,2026-10-30,2026-10-30,2026-11-01,2026-11-01
+C5,20-device fleet + scan detector,Approved change,2,2,2026-10-31,2026-11-01,2026-11-02,2026-11-03
+C6,Final documents refresh,Approved change,1,1,2026-11-02,2026-11-02,2026-11-04,2026-11-04

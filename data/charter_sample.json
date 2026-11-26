@@ -1,0 +1,43 @@
+{
+ "inputs": {
+  "project_name": "IoT Device Security Monitoring System",
+  "project_manager": "[Your name]",
+  "budget": "24 person-days (Rs 24,000) original; 33 person-days (Rs 33,000) after approved changes",
+  "timeframe": "Oct 2026 - Nov 2026 (35 working days)",
+  "team_members": "[Your name] - Project manager, developer, tester, writer",
+  "stakeholders_raw": "[Guide name] - Sponsor / customer (project guide)\nCourse faculty - Reviewers",
+  "description": "A passive Python network monitor for IoT devices such as thermostats, IP cameras, smart lights and badge readers, which cannot run security software. It learns a behavioural baseline per device type, detects new destinations, C2 beaconing, volume spikes, scanning and rogue devices, scores each device 0 to 100, tags findings with MITRE ATT&CK, raises de-duplicated alerts, shows an offline dashboard and generates quarantine scripts. Constraints: one person, simulated traffic, free tools, fixed deadline."
+ },
+ "content": {
+  "objective": "Build a passive network monitor that learns normal behaviour per IoT device type and detects compromised devices, scoring their risk and recommending containment.",
+  "success_criteria": "Detect every injected attack with 0 false alarms on clean traffic; every alert explained and ATT&CK-tagged; all automated tests passing.",
+  "key_deliverables": "Python monitoring system (capture, flows, inventory, baseline, detectors)\nRisk scoring, alerting and quarantine scripts\nOffline SOC-style dashboard\nEvaluation, evasion and fleet results\nSynopsis, project report and presentation",
+  "high_level_requirements": [
+   "Passively read traffic from a pcap file or mirror port",
+   "Identify every device, including unregistered ones",
+   "Learn a baseline per device type from one clean day",
+   "Detect new destinations, beaconing, volume spikes, rhythm changes and scans",
+   "Score risk 0-100 and map findings to MITRE ATT&CK",
+   "Alert without duplicates and generate quarantine scripts for score 100"
+  ],
+  "milestones": [
+   {"milestone": "Synopsis and setup complete", "deadline": "Day 4"},
+   {"milestone": "50% progress review", "deadline": "Day 13"},
+   {"milestone": "Detection, scoring and dashboard v1", "deadline": "Day 21"},
+   {"milestone": "Report v1 delivered (original plan end: Day 24)", "deadline": "Day 26"},
+   {"milestone": "Approved changes and final documents", "deadline": "Day 35"}
+  ],
+  "risks": [
+   "No real labelled IoT data or hardware",
+   "Attacker could evade the detectors",
+   "Alert fatigue from many alerts per incident",
+   "Scope creep from review feedback",
+   "Single-person schedule overrun"
+  ],
+  "stakeholders": [
+   {"name": "[Guide name]", "role": "Sponsor and customer"},
+   {"name": "Course faculty", "role": "Reviewers and assessors"},
+   {"name": "[Your name]", "role": "Project manager and developer"}
+  ]
+ }
+}

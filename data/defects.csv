@@ -1,0 +1,13 @@
+ID,Defect,Found by,Severity,Fix
+D1,Dashboard text escape failed on numbers,Automated test,Medium,esc() accepts any value
+D2,Dashboard script crashed on an empty table,Manual / visual review,Medium,Null guard added
+D3,Wrong beacon count in a test,Automated test,Low,Test expectation corrected
+D4,Leftover junk lines in code,Code review,Low,Removed
+D5,Auto-quarantine switch broke two tests,Automated test,Medium,Tests use temporary paths
+D6,Chart axis showed fractional counts,Manual / visual review,Low,Integer axis option
+D7,Missing table header and wide column,Manual / visual review,Low,Header and width fix
+D8,Mirai scan raised about 55 alerts,Evaluation,High,Fold into one finding
+D9,Printer sweep scored 46 instead of high,Evaluation,High,Scan floor of 70
+D10,Fleet test threshold too strict,Automated test,Low,Lowered to 30
+D11,Internal probe mapped to Brute Force,Code review,Medium,Mapped to Discovery
+D12,Camera scored exactly 70,Evaluation,Medium,Re-tuned risk weights

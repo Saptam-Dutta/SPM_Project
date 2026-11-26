@@ -1,0 +1,14 @@
+ID,Type,Description,Probability (1-5),Impact (1-5),Response strategy,Response action,Outcome
+R1,Risk,No real labelled IoT data or hardware,4,4,Mitigate,Build a simulator with ground-truth labels and fixed seeds,Occurred
+R2,Risk,Baseline poisoned or false alarms,3,4,Mitigate,Learn from a clean day; use floors and p99 limits,Did not occur
+R3,Risk,Attacker evades the detector,3,4,Accept and test,Adversarial evasion sweep; add rhythm detector,Occurred
+R4,Risk,Alert fatigue (many alerts per incident),3,3,Mitigate,Merge findings; fold scans into one; de-duplicate,Occurred
+R5,Risk,Scope creep from feedback,4,3,Control,Change requests; one change at a time,Occurred
+R6,Risk,Single-person schedule overrun,3,4,Mitigate,11-day schedule reserve; trim scope,Partly (2 days)
+R7,Risk,Live VM demo too complex,3,3,Avoid,Drop from scope; list as future work,Avoided
+R8,Risk,Windows libpcap problem,3,2,Mitigate,Use pcap-file mode; Npcap only for live capture,Occurred
+R9,Risk,Loss of work (key person),2,4,Mitigate,Automated tests; documents; archive copy,Did not occur
+O1,Opportunity,Feedback that the project looks simple,4,4,Exploit,Add evasion testing; ATT&CK mapping; 20-device fleet,Realised
+O2,Opportunity,Simulator reusable for a larger fleet,4,3,Enhance,Reuse simulator and detectors for the fleet,Realised
+O3,Opportunity,Evasion test reveals a blind spot,3,4,Exploit,Turn the finding into the rhythm detector (0/15 to 15/15),Realised
+O4,Opportunity,ATT&CK tags make alerts understandable,3,3,Enhance,Tag every finding with a technique and a short reason,Realised
